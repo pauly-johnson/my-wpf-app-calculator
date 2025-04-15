@@ -1,0 +1,1 @@
+C:\Users\Student\Desktop\cSharp\calculator\my-wpf-app\obj\Debug\net5.0-windows\my-wpf-app.csproj.AssemblyReference.cache
