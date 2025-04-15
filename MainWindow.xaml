@@ -22,14 +22,15 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Name="InputBox"
-                   Grid.Row="0"
-                   Grid.Column="0"
-                   Grid.ColumnSpan="4"
-                   Margin="10"
-                   FontSize="24"
-                   HorizontalAlignment="Right"
-                   VerticalAlignment="Center"/>
+        <TextBox Name="InputBox"
+                 Grid.Row="0"
+                 Grid.Column="0"
+                 Grid.ColumnSpan="4"
+                 Margin="10"
+                 FontSize="24"
+                 HorizontalAlignment="Right"
+                 VerticalAlignment="Center"
+                 IsReadOnly="True"/>
 
         <Button Content="AC"
                 Grid.Row="1"
