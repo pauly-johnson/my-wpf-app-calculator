@@ -1,3 +1,4 @@
+using System;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -9,10 +10,7 @@ namespace my_wpf_app
         {
             InitializeComponent();
         }
-        private void CalculateButton_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Calculate button clicked!!!");
-        }
+        
         private void Number_click(object sender, RoutedEventArgs e)
         {
             var button = sender as Button;
