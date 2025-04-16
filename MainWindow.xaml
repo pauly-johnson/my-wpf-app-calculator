@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Calculator"
         Height="350"
-        Width="270">
+        Width="215">
     <Grid>
 
         <Grid.ColumnDefinitions>
@@ -22,15 +22,13 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
-        <TextBox Name="InputBox"
+        <TextBlock Name="InputBox"
                  Grid.Row="0"
                  Grid.Column="0"
                  Grid.ColumnSpan="4"
                  Margin="10"
                  FontSize="24"
-                 HorizontalAlignment="Right"
-                 VerticalAlignment="Center"
-                 IsReadOnly="True"/>
+                 HorizontalAlignment="Right"/>
 
         <Button Content="AC"
                 Grid.Row="1"
@@ -120,8 +118,8 @@
         <Button Content="."
                 Grid.Row="5"
                 Grid.Column="1"
-                Tag="."
-                Click="Number_click"/>
+                Tag="Decimal"
+                Click="Operator_click"/>
         <Button Content="Del"
                 Grid.Row="5"
                 Grid.Column="2"
