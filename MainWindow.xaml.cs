@@ -23,8 +23,8 @@ namespace my_wpf_app
         private void Number_click(object sender, RoutedEventArgs e)
         {
             var button = sender as Button;
-            string value = button.Tag.ToString(); // Get the Tag value
-            InputBox.Text += value; // Append the value to the input box
+            string value = button.Tag.ToString(); 
+            InputBox.Text += value; 
             if (isOperatorPressed)
             {
                 secondNumber = double.Parse(value);
@@ -39,36 +39,36 @@ namespace my_wpf_app
         private void Operator_click(object sender, RoutedEventArgs e)
         {
             var button = sender as Button;
-            string operatorValue = button.Tag.ToString(); // Get the operator value
+            string operatorValue = button.Tag.ToString();
             if (operatorValue == "Add")
             {
                 operation = "+";
-                InputBox.Text = string.Empty; // Clear the input box for the next number
+                InputBox.Text = string.Empty; 
                 isOperatorPressed = true;
             }
             else if (operatorValue == "Subtract")
             {
                 operation = "-";
-                InputBox.Text = string.Empty; // Clear the input box for the next number
+                InputBox.Text = string.Empty; 
                 isOperatorPressed = true;
             }
             else if (operatorValue == "Multiply")
             {
                 operation = "*";
-                InputBox.Text = string.Empty; // Clear the input box for the next number
+                InputBox.Text = string.Empty; 
                 isOperatorPressed = true;
             }
             else if (operatorValue == "Divide")
             {
                 operation = "/";
-                InputBox.Text = string.Empty; // Clear the input box for the next number
+                InputBox.Text = string.Empty; 
                 isOperatorPressed = true;
             }
             else if (operatorValue == "Equals")
             {
                 if (operation != string.Empty)
                 {
-                    // Perform the calculation
+
                     switch (operation)
                     {
                         case "+":
@@ -91,7 +91,7 @@ namespace my_wpf_app
             }
             else if (operatorValue == "Clear" || operatorValue == "ClearAll")
             {
-                InputBox.Text = string.Empty; // Clear the input box
+                InputBox.Text = string.Empty; 
                 firstNumber = 0;
                 secondNumber = 0;
                 operation = string.Empty;
